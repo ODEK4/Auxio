@@ -47,6 +47,7 @@
     <string name="lbl_song_count">Contagem de músicas</string>
     <string name="lbl_track">Faixa</string>
     <string name="lbl_date_added">Data adicionada</string>
+    <string name="lbl_upload_date">Data de upload</string>
     <string name="lbl_sort">Organizar</string>
     <string name="lbl_sort_mode">Ordenar por</string>
     <string name="lbl_playback">A tocar agora</string>

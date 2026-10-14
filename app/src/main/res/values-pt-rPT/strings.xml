@@ -108,6 +108,7 @@
     <string name="set_separators_plus">Mais (+)</string>
     <string name="cdc_ogg">Áudio Ogg</string>
     <string name="lbl_date_added">Data adicionada</string>
+    <string name="lbl_upload_date">Data de upload</string>
     <string name="lbl_sample_rate">Taxa de amostragem</string>
     <string name="lbl_save">Salvar</string>
     <string name="set_separators">Separadores multi-valor</string>

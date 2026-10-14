@@ -109,6 +109,8 @@ object IntegerTable {
     const val SORT_BY_TRACK = 0xA117
     /** Sort.Mode.ByDateAdded */
     const val SORT_BY_DATE_ADDED = 0xA118
+    /** Sort.Mode.ByUploadDate */
+    const val SORT_BY_UPLOAD_DATE = 0xA12B
     /** ReplayGainMode.Off (No longer used but still reserved) */
     const val REPLAY_GAIN_MODE_OFF = 0xA110
     /** ReplayGainMode.Track */

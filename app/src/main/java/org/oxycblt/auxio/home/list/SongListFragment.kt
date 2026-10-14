@@ -143,6 +143,12 @@ class SongListFragment :
                 )
             }
 
+            // Upload date -> Use year of the song's own date
+            is Sort.Mode.ByUploadDate -> {
+                val year = song.date?.year ?: return null
+                FastScrollRecyclerView.PopupProvider.PopupData(getString(R.string.fmt_number, year))
+            }
+
             // Unsupported sort, error gracefully
             else -> null
         }
