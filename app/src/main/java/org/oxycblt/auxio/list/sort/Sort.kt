@@ -374,6 +374,23 @@ data class Sort(val mode: Mode, val direction: Direction) {
             }
         }
 
+        /**
+         * Sort by the date stored in each song's own metadata (the DATE tag). For files downloaded
+         * from YouTube, this is the date the video was uploaded.
+         */
+        data object ByUploadDate : Mode {
+            override val intCode = IntegerTable.SORT_BY_UPLOAD_DATE
+            override val stringRes = R.string.lbl_upload_date
+
+            override fun sortSongs(songs: MutableList<Song>, direction: Direction) {
+                songs.sortBy { it.name }
+                when (direction) {
+                    Direction.ASCENDING -> songs.sortBy { it.date }
+                    Direction.DESCENDING -> songs.sortByDescending { it.date }
+                }
+            }
+        }
+
         companion object {
             fun fromIntCode(intCode: Int): Mode? =
                 when (intCode) {
@@ -386,6 +403,7 @@ data class Sort(val mode: Mode, val direction: Direction) {
                     ByDisc.intCode -> ByDisc
                     ByTrack.intCode -> ByTrack
                     ByDateAdded.intCode -> ByDateAdded
+                    ByUploadDate.intCode -> ByUploadDate
                     else -> null
                 }
         }

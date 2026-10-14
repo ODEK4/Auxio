@@ -110,6 +110,7 @@
     <string name="lbl_disc">Disc</string>
     <string name="lbl_track">Track</string>
     <string name="lbl_date_added">Date added</string>
+    <string name="lbl_upload_date">Upload date</string>
 
     <string name="lbl_sort">Sort</string>
     <string name="lbl_sort_mode">Sort by</string>

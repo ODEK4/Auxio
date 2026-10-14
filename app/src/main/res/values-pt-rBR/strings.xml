@@ -146,6 +146,7 @@
     <string name="set_observing">Recarregamento automático</string>
     <string name="set_observing_desc">Recarrega a biblioteca de músicas sempre que ela for alterada (requer notificação fixa)</string>
     <string name="lbl_date_added">Data adicionada</string>
+    <string name="lbl_upload_date">Data de upload</string>
     <string name="lbl_cancel">Cancelar</string>
     <string name="set_replay_gain_mode_track">Preferir faixa</string>
     <string name="desc_queue_bar">Abrir a fila</string>
